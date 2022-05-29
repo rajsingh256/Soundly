@@ -1,0 +1,156 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#background {
+    background-color: #000;
+    background-image: url(../images/bg3.avif);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#loginContainer *{
+    color: rgb(0, 0, 0);
+    font-family:cursive;
+    font-weight:bold;
+    line-height: 1em;
+    box-sizing: border-box;
+
+}
+
+#loginContainer{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(119, 119, 119);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(119, 119, 119);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(119, 119, 119);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(119, 119, 119);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgb(119, 119, 119);
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    rgb(119, 119, 119);
+}
+#inputContainer{
+    width: 400px;
+    padding: 45px;
+    float: left;
+    border-right: 1px solid navy;
+}
+
+#inputContainer h2{
+    text-align: center;
+}
+
+#inputContainer input[type="text"] 
+,#inputContainer input[type="email"],
+#inputContainer input[type="email2"],
+#inputContainer input[type="password"]{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid navy;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
+
+#inputContainer label {
+    color: navy;
+    font-size: 13px;
+    display: block;
+    margin-top: 15px;
+}
+
+#inputContainer button {
+    background-color: transparent;
+    border: 2px solid navy;
+    border-radius: 250px;
+    color: black;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
+}
+
+#inputContainer button:hover{
+    cursor: pointer;
+}
+
+
+.hasAccountText span {
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+.hasAccountText {
+    text-align: center;
+}
+
+#registerForm,
+#loginForm {
+    display: none;
+}
+
+#loginText{
+    display:table-cell;
+}
+
+#loginText h2{
+    color: rgba(198, 0, 0, 0.63);
+    padding-top: 6.5cm;
+    padding-left: 135px;
+    margin: 0px 0;
+}
+#loginText ul{
+    padding-top: 25px;
+    padding-left: 195px;
+}
+#loginText li{
+    color: rgba(198, 0, 0, 0.63);
+    font-size: 22px;
+    list-style-type: none;
+    padding: 14px 70px;
+    background: url(../images/icons/check.png) no-repeat;
+}
+
+#newPlace h1{
+    padding-right: 750px;
+    padding-top: 100px;
+    text-align: left;
+    color:rgba(198, 0, 0, 0.63);
+    font-size: 85px;
+    font-weight: bold;
+    display: block;
+    font-family:cursive;
+    position:-webkit-sticky;
+    margin-bottom: .5%;
+}
+
+
+#inputContainer .errorMessage{
+   color:brown; 
+   font-size: 12px;
+   display: block;
+}
